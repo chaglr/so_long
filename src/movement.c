@@ -33,8 +33,7 @@ void	ply_move(t_win *d, int keycode, int x, int y)
 		ft_printf("you WIN !!");
 		close_frame(d);
 	}
-	else if (d->level->data[y / 70][x / 70] != 'E' && d->level->data[y / 70][x
-			/ 70] != '1')
+	else if (d->level->data[y / 70][x / 70] != '1')
 	{
 		put_ply(d, keycode);
 		d->player->score += 1;
