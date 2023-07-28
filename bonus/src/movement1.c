@@ -30,8 +30,7 @@ void	check_win_or_lose(t_win *d, int x, int y)
 
 void	update_player_position(t_win *d, int keycode, int x, int y)
 {
-	if (d->level->data[y / 70][x / 70] != 'E' && d->level->data[y / 70][x
-		/ 70] != '1')
+	if (d->level->data[y / 70][x / 70] != '1')
 	{
 		put_ply(d, keycode);
 		d->player->score += 1;
